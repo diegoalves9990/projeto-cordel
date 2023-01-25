@@ -8,6 +8,7 @@
     <style>
         body{
             font-family: Arial, Helvetica, sans-serif;
+            background-image: line;
         }
         table{
             width: 400px;
@@ -46,7 +47,10 @@
             background-color: blue;
             color: white;
         }
-
+        div{
+            overflow-x: auto;
+            
+        }
         
     </style>
 </head>
@@ -59,118 +63,141 @@
         TR, TD, TH
     TFOOTER
         TR, TD, TH
+    TABELA REPONSIVA    
+    div.container{
+        overflow-x: auto
+    }
     -->
 
-    <table>
-        <thead>
-            <th scope="col">estado</th>
-            <th scope="col" style="width: 150px;">população</th>
-        </thead>
+    <div>
+        <table class="container">
+            <thead>
+                <th scope="col">estado</th>
+                <th scope="col" style="width: 150px;">população</th>
+            </thead>
         
-        <tbody>
-            <tr class="cor1">
-                <td>sao paulo</td>
-                <td class="num">45 919 649</td>
-            </tr>
-            <tr class="cor2"><!--cabeceia cada linha da tabela (NÃO ESQUECER DE USAR!!!!!!!!!!)-->
-                <td>minas gerais</td>
-                <td class="num">21 169 791</td>
-            </tr>
-            <caption> População para cada unidade federativa</caption>
-            <tr>
-                <td>rio de janeiro</td>
-                <td class="num">17 264 943</td>
-            </tr>
-            <tr>
-                <td>ceará</td>
-                <td class="num">148 894 757</td>
-            </tr>
-            <tr>
-                <td>distrito federal</td>
-                <td class="num"> 5 760 783</td>
-            </tr>
-            <tr>
-                <td>pernambuco</td>
-                <td class="num">98 068 021</td>
-            </tr>
-            <tr>
-                <td>ro grande do norte</td>
-                <td class="num"> 52 809 602</td>
-            </tr>
-            <tr>
-                <td>paraná</td>
-                <td class="num"> 199 305 236</td>
-            </tr>
-            <tr>
-                <td>rio grande do sul</td>
-                <td class="num">281 707 151</td>
-            </tr>
-            <tr>
-                <td>bahia</td>
-                <td class="num">564 722 611</td>
-            </tr>
-            <tr>
-                <td>maranhao</td>
-                <td class="num">329 642 170</td>
-            </tr>
-            <tr>
-                <td>paraná</td>
-                <td class="num"> 199 305 236</td>
-            </tr>
-            <tr>
-                <td>rio grande do sul</td>
-                <td class="num">281 707 151</td>
-            </tr>
-            <tr>
-                <td>bahia</td>
-                <td class="num">564 722 611</td>
-            </tr>
-            <tr>
-                <td>maranhao</td>
-                <td class="num">329 642 170</td>
-            </tr>
-            <tr>
-                <td>paraná</td>
-                <td class="num"> 199 305 236</td>
-            </tr>
-            <tr>
-                <td>rio grande do sul</td>
-                <td class="num">281 707 151</td>
-            </tr>
-            <tr>
-                <td>bahia</td>
-                <td class="num">564 722 611</td>
-            </tr>
-            <tr>
-                <td>maranhao</td>
-                <td class="num">329 642 170</td>
-            </tr>
-            <tr>
-                <td>paraná</td>
-                <td class="num"> 199 305 236</td>
-            </tr>
-            <tr>
-                <td>rio grande do sul</td>
-                <td class="num">281 707 151</td>
-            </tr>
-            <tr>
-                <td>bahia</td>
-                <td class="num">564 722 611</td>
-            </tr>
-            <tr>
-                <td>maranhao</td>
-                <td class="num">329 642 170</td>
-            </tr>
-        </tbody>
+            <tbody>
+                <tr class="cor1">
+                    <td>sao paulo</td>
+                    <td class="num">45 919 649</td>
+                </tr>
+                <tr class="cor2"><!--cabeceia cada linha da tabela (NÃO ESQUECER DE USAR!!!!!!!!!!)-->
+                    <td>minas gerais</td>
+                    <td class="num">21 169 791</td>
+                </tr>
+                <caption> População para cada unidade federativa</caption>
+                <tr>
+                    <td>rio de janeiro</td>
+                    <td class="num">17 264 943</td>
+                </tr>
+                <tr>
+                    <td>ceará</td>
+                    <td class="num">148 894 757</td>
+                </tr>
+                <tr>
+                    <td>distrito federal</td>
+                    <td class="num"> 5 760 783</td>
+                </tr>
+                <tr>
+                    <td>pernambuco</td>
+                    <td class="num">98 068 021</td>
+                </tr>
+                <tr>
+                    <td>ro grande do norte</td>
+                    <td class="num"> 52 809 602</td>
+                </tr>
+                <tr>
+                    <td>paraná</td>
+                    <td class="num"> 199 305 236</td>
+                </tr>
+                <tr>
+                    <td>rio grande do sul</td>
+                    <td class="num">281 707 151</td>
+                </tr>
+                <tr>
+                    <td>bahia</td>
+                    <td class="num">564 722 611</td>
+                </tr>
+                <tr>
+                    <td>maranhao</td>
+                    <td class="num">329 642 170</td>
+                </tr>
+                <tr>
+                    <td>paraná</td>
+                    <td class="num"> 199 305 236</td>
+                </tr>
+                <tr>
+                    <td>rio grande do sul</td>
+                    <td class="num">281 707 151</td>
+                </tr>
+                <tr>
+                    <td>bahia</td>
+                    <td class="num">564 722 611</td>
+                </tr>
+                <tr>
+                    <td>maranhao</td>
+                    <td class="num">329 642 170</td>
+                </tr>
+                <tr>
+                    <td>paraná</td>
+                    <td class="num"> 199 305 236</td>
+                </tr>
+                <tr>
+                    <td>rio grande do sul</td>
+                    <td class="num">281 707 151</td>
+                </tr>
+                <tr>
+                    <td>bahia</td>
+                    <td class="num">564 722 611</td>
+                </tr>
+                <tr>
+                    <td>maranhao</td>
+                    <td class="num">329 642 170</td>
+                </tr>
+                <tr>
+                    <td>paraná</td>
+                    <td class="num"> 199 305 236</td>
+                </tr>
+                <tr>
+                    <td>rio grande do sul</td>
+                    <td class="num">281 707 151</td>
+                </tr>
+                <tr>
+                    <td>bahia</td>
+                    <td class="num">564 722 611</td>
+                </tr>
+                <tr>
+                    <td>maranhao</td>
+                    <td class="num">329 642 170</td>
+                </tr>
+            </tbody>
         
-        <tfoot>
-            <tr>
-                <th scope="row">total de habitantes</th> <!--nomeia a celula para servir com indicador de conteúdo-->
-                <td class="num"> <strong>21 000 000 000</strong> </td>
-            </tr>
-        </tfoot>
-    </table>
-    
-    </p>
+            <tfoot>
+                <tr>
+                    <th scope="row">total de habitantes</th> <!--nomeia a celula para servir com indicador de conteúdo-->
+                    <td class="num"> <strong>21 000 000 000</strong> </td>
+                </tr>
+            </tfoot>
+        </table>
+        
+        </p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. At similique, praesentium, obcaecati iure quia unde nesciunt cum quis nisi nobis, eveniet ad iste itaque quibusdam debitis. Dolore vero sint nobis.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. At similique, praesentium, obcaecati iure quia unde nesciunt cum quis nisi nobis, eveniet ad iste itaque quibusdam debitis. Dolore vero sint nobis.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. At similique, praesentium, obcaecati iure quia unde nesciunt cum quis nisi nobis, eveniet ad iste itaque quibusdam debitis. Dolore vero sint nobis.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. At similique, praesentium, obcaecati iure quia unde nesciunt cum quis nisi nobis, eveniet ad iste itaque quibusdam debitis. Dolore vero sint nobis.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. At similique, praesentium, obcaecati iure quia unde nesciunt cum quis nisi nobis, eveniet ad iste itaque quibusdam debitis. Dolore vero sint nobis.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. At similique, praesentium, obcaecati iure quia unde nesciunt cum quis nisi nobis, eveniet ad iste itaque quibusdam debitis. Dolore vero sint nobis.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. At similique, praesentium, obcaecati iure quia unde nesciunt cum quis nisi nobis, eveniet ad iste itaque quibusdam debitis. Dolore vero sint nobis.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. At similique, praesentium, obcaecati iure quia unde nesciunt cum quis nisi nobis, eveniet ad iste itaque quibusdam debitis. Dolore vero sint nobis.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. At similique, praesentium, obcaecati iure quia unde nesciunt cum quis nisi nobis, eveniet ad iste itaque quibusdam debitis. Dolore vero sint nobis.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. At similique, praesentium, obcaecati iure quia unde nesciunt cum quis nisi nobis, eveniet ad iste itaque quibusdam debitis. Dolore vero sint nobis.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. At similique, praesentium, obcaecati iure quia unde nesciunt cum quis nisi nobis, eveniet ad iste itaque quibusdam debitis. Dolore vero sint nobis.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. At similique, praesentium, obcaecati iure quia unde nesciunt cum quis nisi nobis, eveniet ad iste itaque quibusdam debitis. Dolore vero sint nobis.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. At similique, praesentium, obcaecati iure quia unde nesciunt cum quis nisi nobis, eveniet ad iste itaque quibusdam debitis. Dolore vero sint nobis.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. At similique, praesentium, obcaecati iure quia unde nesciunt cum quis nisi nobis, eveniet ad iste itaque quibusdam debitis. Dolore vero sint nobis.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. At similique, praesentium, obcaecati iure quia unde nesciunt cum quis nisi nobis, eveniet ad iste itaque quibusdam debitis. Dolore vero sint nobis.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. At similique, praesentium, obcaecati iure quia unde nesciunt cum quis nisi nobis, eveniet ad iste itaque quibusdam debitis. Dolore vero sint nobis.
+    </div>
+
 </body>
 </html>

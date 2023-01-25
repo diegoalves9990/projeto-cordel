@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table{
+            font-family: Arial, Helvetica, sans-serif;
+            width: 400px;
+            border-collapse: collapse;
+        }
+        th, td{
+            border: 1px solid black;
+            
+        }
+        th{
+            background-color: rgb(71, 69, 69);
+            color: white;
+            font-weight: bolder;
+        }
+        th.titulo{
+            background-color: white;
+            color: black;
+            font-weight: bolder;
+        }
+        .n{
+            font-weight: bolder;
+            text-align: center;
+        }
+        .indmeta{
+            text-align: left;
+        }
+        #meta{
+            background-color: rgb(71, 69, 69);
+            color: white;
+            font-weight: bolder;
+        }
+        
+
+    </style>
+    <!-- colgroup, permite que você modifique cada coluna separadaente no style.
+    <colgrupo>
+        col clas="..." dentro das "col" você coloca seus dados da tabela-->
+</head>
+<body>
+    <table>
+        <tr><!-- TOPO DA TABELA -->
+            <th rowspan="2">Área</th>
+            <th rowspan="2">Disciplina</th>
+            <th colspan="2">Notas</th>
+            <th rowspan="2">Média</th>
+        </tr>
+        <tr><!-- LANÇAMENTO DE NOTA SUB TOPO -->
+            <th class="num">Nota1</th>
+            <th class="num">Nota2</th>
+        </tr>
+        <tr> <!-- corpo da tabela -->
+            <th rowspan="3" scope="rowgroup" class="titulo">Exatas</th>
+            <td>Matemática</td>
+            <td class="n">7.5</td>
+            <td class="n">8.0</td>
+            <td class="n">6</td>
+        </tr>
+        <tr> <!-- corpo da tabela -->
+            <td>Matemática</td>
+            <td class="n">7.5</td>
+            <td class="n">8.0</td>
+            <td class="n">6</td>
+        </tr>
+        <tr> <!-- corpo da tabela -->
+            <td>Matemática</td>
+            <td class="n">7.5</td>
+            <td class="n">8.0</td>
+            <td class="n">6</td>
+        </tr>
+        <tr>
+            <th colspan="4" class="indmeta">Média de Exatas</th>
+            <td class="n" id="meta">0.0</td>
+        </tr>
+        <tr>
+            <th rowspan="2" scope="rowgroup" class="titulo">Humanas</th>
+            <td>Geografia</td>
+            <td class="n">0.0</td>
+            <td class="n">0.0</td>
+            <td class="n">0.0</td>
+        </tr>
+        <tr>
+            <td>História</td>
+            <td class="n">0.0</td>
+            <td class="n">0.0</td>
+            <td class="n">0.0</td>
+        </tr>
+        <tr>
+            <th colspan="4" class="indmeta">Média de Humanas</th>
+            <td class="n" id="meta">0.0</td>
+        </tr>
+    </table>
+</body>
+</html>
