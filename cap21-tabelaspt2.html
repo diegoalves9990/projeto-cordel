@@ -5,8 +5,172 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tabelaspt2</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table{
+            width: 400px;
+            border-collapse: collapse;
+            background-color: rgba(128, 128, 128, 0.062);
+            position: relative; /*primeiro passso para ativar o 
+            topo fixo da tabela*/
+        }
+        thead > tr > th/* criar o caminho especificando por 
+        hierarquia o cabeçalho da tabela*/{
+            position: sticky;/* configura o texto do cabeçalho como colado ! NÃO USAR FIXED !*/
+            top: -1px;/* siginifica que o cabeçalho ficara colado na posição zero, no topo.*/
+            background-color: darkgray;
+
+        }
+        thead{
+            background-color: gray;
+            color: white;
+        }
+        td, th{
+            border: 1px solid black;
+
+        }
+        td.num{
+            text-align: right;
+            padding: 8px;
+        
+        }
+        caption{
+            padding: 10px;
+            background-color: rgba(169, 169, 169, 0.384);
+            font-weight: bold;
+            font-size: 1.5em;
+        }
+        tbody > tr:nth-child(odd){ /*identifique sempre em qual seletor e use > para identificar seu filho, logo após adicione o pseu código :nth-child(quantas linhas intercalam) usando odd somente as impares são selecionadas*/
+            background-color: blue;
+            color: white;
+        }
+
+        
+    </style>
 </head>
 <body>
+    <h1>uso de tabelas grandes</h1>
+    <!--anatomia para tabela grande
+    THEAD
+        TR, TD, TH
+    TBODY
+        TR, TD, TH
+    TFOOTER
+        TR, TD, TH
+    -->
+
+    <table>
+        <thead>
+            <th scope="col">estado</th>
+            <th scope="col" style="width: 150px;">população</th>
+        </thead>
+        
+        <tbody>
+            <tr class="cor1">
+                <td>sao paulo</td>
+                <td class="num">45 919 649</td>
+            </tr>
+            <tr class="cor2"><!--cabeceia cada linha da tabela (NÃO ESQUECER DE USAR!!!!!!!!!!)-->
+                <td>minas gerais</td>
+                <td class="num">21 169 791</td>
+            </tr>
+            <caption> População para cada unidade federativa</caption>
+            <tr>
+                <td>rio de janeiro</td>
+                <td class="num">17 264 943</td>
+            </tr>
+            <tr>
+                <td>ceará</td>
+                <td class="num">148 894 757</td>
+            </tr>
+            <tr>
+                <td>distrito federal</td>
+                <td class="num"> 5 760 783</td>
+            </tr>
+            <tr>
+                <td>pernambuco</td>
+                <td class="num">98 068 021</td>
+            </tr>
+            <tr>
+                <td>ro grande do norte</td>
+                <td class="num"> 52 809 602</td>
+            </tr>
+            <tr>
+                <td>paraná</td>
+                <td class="num"> 199 305 236</td>
+            </tr>
+            <tr>
+                <td>rio grande do sul</td>
+                <td class="num">281 707 151</td>
+            </tr>
+            <tr>
+                <td>bahia</td>
+                <td class="num">564 722 611</td>
+            </tr>
+            <tr>
+                <td>maranhao</td>
+                <td class="num">329 642 170</td>
+            </tr>
+            <tr>
+                <td>paraná</td>
+                <td class="num"> 199 305 236</td>
+            </tr>
+            <tr>
+                <td>rio grande do sul</td>
+                <td class="num">281 707 151</td>
+            </tr>
+            <tr>
+                <td>bahia</td>
+                <td class="num">564 722 611</td>
+            </tr>
+            <tr>
+                <td>maranhao</td>
+                <td class="num">329 642 170</td>
+            </tr>
+            <tr>
+                <td>paraná</td>
+                <td class="num"> 199 305 236</td>
+            </tr>
+            <tr>
+                <td>rio grande do sul</td>
+                <td class="num">281 707 151</td>
+            </tr>
+            <tr>
+                <td>bahia</td>
+                <td class="num">564 722 611</td>
+            </tr>
+            <tr>
+                <td>maranhao</td>
+                <td class="num">329 642 170</td>
+            </tr>
+            <tr>
+                <td>paraná</td>
+                <td class="num"> 199 305 236</td>
+            </tr>
+            <tr>
+                <td>rio grande do sul</td>
+                <td class="num">281 707 151</td>
+            </tr>
+            <tr>
+                <td>bahia</td>
+                <td class="num">564 722 611</td>
+            </tr>
+            <tr>
+                <td>maranhao</td>
+                <td class="num">329 642 170</td>
+            </tr>
+        </tbody>
+        
+        <tfoot>
+            <tr>
+                <th scope="row">total de habitantes</th> <!--nomeia a celula para servir com indicador de conteúdo-->
+                <td class="num"> <strong>21 000 000 000</strong> </td>
+            </tr>
+        </tfoot>
+    </table>
     
+    </p>
 </body>
 </html>
